@@ -1,5 +1,22 @@
 # INF236-2023-1-PAR201-GRUPO-3
 
+Este es el repositorio del *Grupo 3*, cuyos integrantes son:
+
+* Pedro Arce - 202056597-k
+* Fabian Miranda - 202030515-3 
+* Fernando Carrasco - 202030542-0
+
+## Wiki
+
+Puede acceder a la wiki mediante el siguiente [enlace](https://gitlab.inf.utfsm.cl/mveliz/inf236-2023-1-par201-grupo-3/-/wikis/home)
+
+## Videos
+
+* [Video presentación cliente](https://youtu.be/NN5byxZM8Fc)
+
+## Aspectos técnicos relevantes
+
+
 # MERN-base-proyect
 Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-stack-tutorial)
 
