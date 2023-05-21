@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
-import axios from "axios";
+import Axios from 'axios';
 
 // We import bootstrap to make our application look better.
 import "bootstrap/dist/css/bootstrap.css";
@@ -32,7 +32,7 @@ export default function CrearPaciente() {
 
     async function onSubmit(evento) {
         evento.preventDefault();
-        await axios.post("http://localhost:5000/paciente/add", form);
+        await Axios.post("http://localhost:5000/paciente/add", form);
         setForm({
             nombre: "",
             rut: "",
@@ -53,7 +53,7 @@ export default function CrearPaciente() {
             <legend>Formulario de pacientes</legend>
            
             <div className="form-group">
-            <label className="col-form-label mt-4" for= "inputName"> Nombre: </label>
+            <label className="col-form-label mt-4" htmlFor= "inputName"> Nombre: </label>
             <input
             type="text"
             className="form-control"
@@ -65,7 +65,7 @@ export default function CrearPaciente() {
             </div>
            
            <div className="form-group">
-            <label className="col-form-label mt-4" for= "inputrut"> R.U.T </label>
+            <label className="col-form-label mt-4" htmlFor= "inputrut"> R.U.T </label>
             <input
             type="text"
             className="form-control"
@@ -77,7 +77,7 @@ export default function CrearPaciente() {
             </div>
             
             <div className="form-group">
-            <label className="col-form-label mt-4" for= "inputdireccion"> Direccion: </label>
+            <label className="col-form-label mt-4" htmlFor= "inputdireccion"> Direccion: </label>
             <input
             type="text"
             className="form-control"
@@ -89,7 +89,7 @@ export default function CrearPaciente() {
             </div>
            
             <div className="form-group">
-            <label className="col-form-label mt-4" for= "inputfecha"> Fecha de nacimiento: </label>
+            <label className="col-form-label mt-4" htmlFor= "inputfecha"> Fecha de nacimiento: </label>
             <input
             type="date"
             className="form-control"
@@ -101,7 +101,7 @@ export default function CrearPaciente() {
             </div>
             
             <div className="form-group">
-            <label className="col-form-label mt-4" for= "inputsexo"> Sexo: </label>
+            <label className="col-form-label mt-4" htmlFor= "inputsexo"> Sexo: </label>
             <input
             type="text"
             className="form-control"
@@ -113,7 +113,7 @@ export default function CrearPaciente() {
             </div>
             
             <div className="form-group">
-            <label className="col-form-label mt-4" for= "inputacompañante"> Acompañante: </label>
+            <label className="col-form-label mt-4" htmlFor= "inputacompañante"> Acompañante: </label>
             <input
             type="text"
             className="form-control"
@@ -125,7 +125,7 @@ export default function CrearPaciente() {
             </div>
             
             <div className="form-group">
-            <label className="col-form-label mt-4" for= "inputmotivo"> Motivo de consulta: </label>
+            <label className="col-form-label mt-4" htmlFor= "inputmotivo"> Motivo de consulta: </label>
             <input
             type="text"
             className="form-control"
