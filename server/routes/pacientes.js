@@ -5,7 +5,7 @@ const express = require("express");
 const pacienteSchema = require("../models/pacientes");
 
 //creare una ruta expecifica para los pacientes
-const router = express.router();
+const router = express.Router();
 
 //crear un paciente
 router.post("/paciente/add", (require,response) => {
@@ -48,3 +48,5 @@ router.put("/update/:id", (require, response) => {
     .catch((error) => response.json({message: 'ocurrio el siguiente error al actualizar informacion del paciente: ' + error}));
 
 });
+
+module.exports = router;
