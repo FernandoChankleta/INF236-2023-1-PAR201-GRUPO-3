@@ -14,23 +14,19 @@ const pacienteSchema = mongoose.Schema({
         required: false
     },
     fecha_nacimiento: {
-        type: Date,
+        type: String,
         required: false 
     },
-    sexo: {
+    comuna: {
         type: String,
         required: false
     },
-    acompañante: {
+    prevision: {
         type: String,
         required: false
     },
-    motivo_consulta: {
+    convenio: {
         type: String,
-        required: false
-    },
-    categoria: {
-        type: String, 
         required: false
     }
 }, {collection: "pacientes"});

@@ -8,7 +8,7 @@ import Navbar from "./components/navbar";
 import RecordList from "./components/recordList";
 import Edit from "./components/edit";
 import Create from "./components/create";
-import Formulario from "./components/formulario";
+import Formulario from "./components/formularios/formularioIngreso";
 import ShowPacientes from "./components/showPacientes";
  
 const App = () => {

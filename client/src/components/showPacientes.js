@@ -8,10 +8,9 @@ const Record = (props) => (
       <td>{props.record.rut}</td>
       <td>{props.record.direccion}</td>
       <td>{props.record.fecha_nacimiento}</td>
-      <td>{props.record.sexo}</td>
-      <td>{props.record.acompañante}</td>
-      <td>{props.record.motivo_consulta}</td>
-      <td>{props.record.categoria}</td>
+      <td>{props.record.comuna}</td>
+      <td>{props.record.prevision}</td>
+      <td>{props.record.convenio}</td>
       <td>
         <Link className="btn btn-link" to={`/edit/${props.record._id}`}>Editar</Link> |
         <button className="btn btn-link"
@@ -70,10 +69,9 @@ const PacientList = () => {
             <th>R.U.T</th>
             <th>Direccion</th>
             <th>Fecha de nacimiento</th>
-            <th>Sexo</th>
-            <th>Acompañante</th>
-            <th>Motivo de consulta</th>
-            <th>Categoria</th>
+            <th>Comuna</th>
+            <th>Prevision</th>
+            <th>Convenio</th>
           </tr>
         </thead>
         <tbody>{recordList()}</tbody>

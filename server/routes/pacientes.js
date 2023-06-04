@@ -40,10 +40,10 @@ router.delete("/borrar/:id", (require,response) => {
 });
 
 //actualizar informacion del paciente 
-router.put("/update/:id", (require, response) => {
+router.put("/updatePaciente/:id", (require, response) => {
     const {id} = require.params;
-    const {nombre, rut, direccion, fecha_nacimiento, sexo, acompañante, motivo_consulta, categoria} = require.body;
-    pacienteSchema.updateOne({_id: id}, {$set: {nombre, rut, direccion, fecha_nacimiento, sexo, acompañante, motivo_consulta, categoria}})
+    const {nombre, rut, direccion, fecha_nacimiento, comuna, prevision, convenio} = require.body;
+    pacienteSchema.updateOne({_id: id}, {$set: {nombre, rut, direccion, fecha_nacimiento, comuna, prevision, convenio}})
     .then((evento) => response.json(evento))
     .catch((error) => response.json({message: 'ocurrio el siguiente error al actualizar informacion del paciente: ' + error}));
 
