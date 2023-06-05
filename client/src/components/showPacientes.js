@@ -73,9 +73,9 @@ const PacientList = () => {
   }
 
   return (
-    <div classname="App" style={{marginTop: "150px"}}>
-      <div className="containerInput">
-        <input
+    <div className="App" style={{marginTop: "100px"}}>
+      <div className="containerInput" style={{display: "flex"}}>
+        <input style={{width: 700}}
           className="form-control inputBuscar"
           value={busqueda}
           placeholder="busqueda por Nombre del paciente"
