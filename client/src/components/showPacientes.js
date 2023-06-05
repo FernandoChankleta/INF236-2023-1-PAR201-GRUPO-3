@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Record = (props) => (
     <tr>
@@ -24,11 +26,28 @@ const Record = (props) => (
 
 const PacientList = () => {
   const [pacients, setPacients] = useState([]);
+  const [tablaPacientes, setTablaPacientes] = useState([]);
+  const [busqueda, setbusqueda] = useState("");
 
   const getUsers = async () => {
     const res = await Axios.get("http://localhost:5000/pacientes");
     setPacients(res.data);
+    setTablaPacientes(res.data);
   };
+
+  const handleChange = e => {
+    setbusqueda(e.target.value);
+    filtrar(e.target.value);
+  }
+
+  const filtrar = (terminoBusqueda) => {
+    var resultadosBusqueda = tablaPacientes.filter((elemento) =>{
+      if(elemento.nombre.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())){
+        return elemento;
+      }
+    })
+    setPacients(resultadosBusqueda);
+  }
 
   useEffect(() => {
     getUsers();
@@ -54,11 +73,18 @@ const PacientList = () => {
   }
 
   return (
-    <div style={{marginTop: "150px"}}>
-      <form className="d-flex">
-        <input className="form-control me-sm-2" type="search" placeholder="Buscar Paciente" />
-        <button className="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
-      </form>
+    <div classname="App" style={{marginTop: "150px"}}>
+      <div className="containerInput">
+        <input
+          className="form-control inputBuscar"
+          value={busqueda}
+          placeholder="busqueda por Nombre del paciente"
+          onChange={handleChange}
+        />
+        <button className="btn btn-success">
+          <FontAwesomeIcon icon={faSearch} />
+        </button>
+      </div>
       <br></br>
       <br></br>
       <h3>Lista de Pacientes</h3>

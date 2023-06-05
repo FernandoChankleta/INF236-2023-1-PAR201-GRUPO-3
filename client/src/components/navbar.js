@@ -29,22 +29,19 @@ export default function Navbar() {
        <div className="collapse navbar-collapse" id="navbarSupportedContent">
          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
            <li className="nav-item">
-             <NavLink className="nav-link" to="/formulario">
+             <NavLink className="nav-link" to="/formularioIngreso">
                Ingresar Paciente
              </NavLink>
            </li>
+
            <li className="nav-item">
-             <NavLink className="nav-link" to="/create">
+             <NavLink className="nav-link" to="/formularioTriage">
                Triage
              </NavLink>
            </li>
+
            <li className="nav-item">
-             <NavLink className="nav-link" to="/create">
-               
-             </NavLink>
-           </li>
-           <li className="nav-item">
-             <NavLink className="nav-link" to="/create">
+             <NavLink className="nav-link" to="/formularioAnamnesis">
                Anamnesis
              </NavLink>
            </li>

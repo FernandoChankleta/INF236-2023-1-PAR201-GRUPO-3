@@ -8,7 +8,9 @@ import Navbar from "./components/navbar";
 import RecordList from "./components/recordList";
 import Edit from "./components/edit";
 import Create from "./components/create";
-import Formulario from "./components/formularios/formularioIngreso";
+import FormularioI from "./components/formularios/formularioIngreso";
+import FormularioT from "./components/formularios/formularioTriage";
+import FormularioA from "./components/formularios/formularioAnamnesis";
 import ShowPacientes from "./components/showPacientes";
  
 const App = () => {
@@ -19,7 +21,9 @@ const App = () => {
        <Route exact path="/recordlist" element={<RecordList />} />
        <Route path="/edit/:id" element={<Edit />} />
        <Route path="/create" element={<Create />} />
-       <Route path="/formulario" element={<Formulario/>} />
+       <Route path="/formularioIngreso" element={<FormularioI/>} />
+       <Route path="/formularioTriage" element={<FormularioT/>} />
+       <Route path="/formularioAnamnesis" element={<FormularioA/>} />
        <Route path="/" element={<ShowPacientes/>} />
      </Routes>
    </div>
