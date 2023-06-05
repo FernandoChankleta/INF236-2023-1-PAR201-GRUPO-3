@@ -12,7 +12,7 @@ export default function Navbar() {
    <div>
      <nav className="navbar navbar-expand-lg navbar-light bg-light">
        <NavLink className="navbar-brand" to="/">
-       <img style={{"width" : 25 + '%'}} src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_Samu.gif"></img>
+       <img style={{"width" : 50 + '%'}} src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_Samu.gif"></img>
        </NavLink>
        <button
          className="navbar-toggler"
@@ -30,19 +30,19 @@ export default function Navbar() {
          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
            <li className="nav-item">
              <NavLink className="nav-link" to="/formularioIngreso">
-               Ingresar Paciente
+               <h5>Ingresar Paciente</h5>
              </NavLink>
            </li>
 
            <li className="nav-item">
              <NavLink className="nav-link" to="/formularioTriage">
-               Triage
+               <h5>Triage</h5>
              </NavLink>
            </li>
 
            <li className="nav-item">
              <NavLink className="nav-link" to="/formularioAnamnesis">
-               Anamnesis
+               <h5>Anamnesis</h5>
              </NavLink>
            </li>
          </ul>
