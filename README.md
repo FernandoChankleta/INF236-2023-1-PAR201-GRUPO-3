@@ -8,7 +8,7 @@ Este es el repositorio del *Grupo 3*, cuyos integrantes son:
 
 ## Wiki
 
-Puede acceder a la wiki mediante el siguiente [enlace](https://gitlab.inf.utfsm.cl/mveliz/inf236-2023-1-par201-grupo-3/-/wikis/home)
+Puede acceder a la wiki mediante el siguiente [enlace](https://github.com/FernandoChankleta/INF236-2023-1-PAR201-GRUPO-3/wiki)
 
 ## Videos
 
