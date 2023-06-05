@@ -13,6 +13,7 @@ Puede acceder a la wiki mediante el siguiente [enlace](https://gitlab.inf.utfsm.
 ## Videos
 
 * [Video presentación cliente](https://youtu.be/NN5byxZM8Fc)
+* [Video Hito 4](https://youtu.be/KTj7mqmAHOg)
 
 ## Aspectos técnicos relevantes
 
