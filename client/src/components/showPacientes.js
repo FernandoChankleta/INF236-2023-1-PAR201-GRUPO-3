@@ -15,11 +15,7 @@ const Record = (props) => (
       <td>{props.record.convenio}</td>
       <td>
         <Link className="btn btn-link" to={`/edit/${props.record._id}`}>Editar</Link> |
-        <button className="btn btn-link"
-          onClick={() => {
-            props.deletePacient(props.record._id);
-          }}
-        >Borrar</button>
+        <Link className="btn btn-link" to={`/fichaAtencion/${props.record._id}`}>Generar Ficha de Atencion</Link>
       </td>
     </tr>
   );

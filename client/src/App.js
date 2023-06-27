@@ -13,6 +13,7 @@ import FormularioT from "./components/formularios/formularioTriage";
 import FormularioA from "./components/formularios/formularioAnamnesis";
 import ShowPacientes from "./components/showPacientes";
 import ShowTriage from "./components/showTriage";
+import PDF from "./components/informeAtencion";
  
 const App = () => {
  return (
@@ -27,6 +28,7 @@ const App = () => {
        <Route path="/formularioAnamnesis" element={<FormularioA/>} />
        <Route path="/" element={<ShowPacientes/>} />
        <Route path="/show" element={<ShowTriage/>} />
+       <Route path="/fichaAtencion/:id" element={<PDF/>} />
 
      </Routes>
    </div>
