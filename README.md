@@ -14,6 +14,7 @@ Puede acceder a la wiki mediante el siguiente [enlace](https://github.com/Fernan
 
 * [Video presentación cliente](https://youtu.be/NN5byxZM8Fc)
 * [Video Hito 4](https://youtu.be/KTj7mqmAHOg)
+* [Video Hito 6 y 7](https://youtu.be/pdsTK7chq9w)
 
 ## Aspectos técnicos relevantes
 
